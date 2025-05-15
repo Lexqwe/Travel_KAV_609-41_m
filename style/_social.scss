@@ -1,0 +1,201 @@
+.social{
+    padding: 46px 0 100px 0;
+    p{
+        font-weight: 600;
+    }
+
+    @media (max-width: $breakpoint-2){
+        p{
+            font-size: 16px;
+            line-height: 28px;
+        }
+        padding: 6px 0 40px 0;
+    }
+    @media (max-width: $breakpoint-4){
+        padding: 30px 0 40px 0;
+    }
+}
+
+.social__border-block{
+    max-width: $breakpoint-1;
+    margin: 0 auto;
+    border-bottom: 1px solid $light-second;
+    padding: 0 120px;
+    @media (max-width: $breakpoint-2){
+        max-width: $breakpoint-2;
+        padding: 0 100px;
+        h2{
+            font-size: 45px;
+            line-height: 48px;
+        }
+    }
+    @media (max-width: $breakpoint-3){
+        max-width: $breakpoint-3;
+    }
+    @media (max-width: $breakpoint-3){
+        max-width: $breakpoint-3;
+    }
+    @media (max-width: $breakpoint-4){
+        max-width: $breakpoint-5;
+        h2{
+            font-size: 40px;
+            line-height: 52px;
+        }
+        padding: 0 20px;
+    }
+    @media (max-width: $breakpoint-5){
+        max-width: 100%;
+    }
+}
+
+
+.social__offer-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 47px;
+    @media (max-width: $breakpoint-2){
+        flex-direction: column;
+        gap: 10px;
+    }
+    @media (max-width: $breakpoint-4){
+        align-items: start;
+        flex-direction: column;
+        padding-bottom: 38px;
+        gap: 16px;
+    }
+}
+
+.social__main{
+    padding-top: 77px;
+    display: flex;
+    align-items: self-end;
+    justify-content: space-between;
+    @media (max-width: $breakpoint-3){
+        padding-top: 25px;
+    }
+    @media (max-width: $breakpoint-4){
+        flex-direction: column;
+        padding-top: 45px;
+        gap: 40px;
+    }
+}
+
+.social__main-links{
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    @media (max-width: $breakpoint-3){
+        gap: 30px;
+    }
+    @media (max-width: $breakpoint-4){
+        gap: 25px;
+    }
+}
+
+.social__main-links__text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+
+    h4{
+        letter-spacing: 2.6px;
+    }
+    @media (max-width: $breakpoint-4){
+        gap: 12px;
+        h4{
+            font-size: 28px;
+            line-height: 28px;
+        }
+        p{
+            display: none;
+        }
+        .soc__br4{
+            display: block;
+        }
+    }
+}
+
+.social__main-links__icons-br4{
+    .social__main-nav__icon{
+        display: none;
+    }
+    @media (max-width: $breakpoint-4){
+        .social__main-nav__icon{
+            display: block;
+        }
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.social__main-links__icons{
+    display: flex;
+    gap: 32px;
+    @media (max-width: $breakpoint-4){
+        gap: 12px;
+    }
+}
+
+.social__main-iconblock{
+    width: 40px;
+    height: 40px;
+    background-color: $light-five;
+    border-radius: 32px;
+    text-align: center;    
+    img{
+        vertical-align: middle;
+    }
+    @media (max-width: $breakpoint-2){
+        padding: 10px 0;
+    }
+    @media (max-width: $breakpoint-4){
+        padding: 5px 0;
+    }
+}
+
+.social__main-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 41px;
+    @media (max-width: $breakpoint-4){
+        .social__main-nav__icon{
+            display: none;
+        }
+        flex-direction: unset;
+    }
+}
+
+.social__main-nav__icon{
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 4px 26px 0 rgba(66, 62, 68, 0.35);
+    background-color: $gray;
+    border-radius: 32px;
+    padding: 10px 21px;
+    @media (max-width: $breakpoint-4){
+        width: 36px;
+        height: 36px;
+        padding: 5px 0;
+    }
+}
+
+.social__main-nav_pannel{
+    padding-top: 12px;
+    display: flex;
+    gap: 60px;
+    @media (max-width: $breakpoint-3){
+        gap: 30px;
+    }
+    @media (max-width: $breakpoint-4){
+        padding-top: 0;
+        gap: none;
+    }
+}
+
+.soc__br4{
+    display: none;
+}

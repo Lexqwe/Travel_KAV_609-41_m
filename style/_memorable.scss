@@ -1,0 +1,79 @@
+.memorable{
+    padding: 100px 0;
+    @media (max-width: $breakpoint-2){
+        padding: 40px 0;
+    }
+    @media (max-width: $breakpoint-2){
+        padding: 53px 0 20px 0;
+    }
+}
+
+.memorable__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $breakpoint-2){
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    @media (max-width: $breakpoint-4){
+        gap: 28px;
+        img{
+            height: 321px;
+        }
+    }
+}
+
+.memorable__content-info{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @media (max-width: $breakpoint-4){
+        text-align: left;
+        gap: 0;
+    }
+}
+
+.memorable__content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    @media (max-width: $breakpoint-4){
+        text-align: left;
+        gap: 12px;
+        p{
+            display: none;
+        }
+        .mem__br4{
+            display: block;
+        }
+    }
+}
+
+.memorable__content-links{
+    display: flex;
+    gap: 32px;
+    @media (max-width: $breakpoint-2){
+        justify-content: space-between;
+    }
+    @media (max-width: $breakpoint-4){
+        display: none;
+    }
+}
+
+.memorable__content-links__discover{
+    display: flex;
+    align-items: center;
+    p{
+        line-height: 29px;
+        color: $dark-second;
+        border-bottom: 1px solid $dark-second;
+    }
+}
+
+
+.mem__br4{
+    display: none;
+}

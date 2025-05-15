@@ -1,0 +1,30 @@
+.best__content-cards__moblie{
+    display: none;
+    @media (max-width: $breakpoint-4){
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.best__content-cards__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.best__content-cards__button{
+    width: 10px;
+    height: 10px;
+    background-color: $primary;
+    opacity: 30%;
+    border-radius: 32px;
+}
+
+.active{
+    width: 28px;
+    height: 10px;
+    border-radius: 16px;
+    opacity: 100%;
+    background-color: $primary;
+}

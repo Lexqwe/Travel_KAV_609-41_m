@@ -1,0 +1,171 @@
+.whyus{
+    padding: 100px 0;
+
+    @media (max-width: $breakpoint-2){
+        padding: 50px 0;
+    }
+}
+
+.whyus__content{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @media (max-width: $breakpoint-3){
+        gap: 30px;
+    }
+    @media (max-width: $breakpoint-4){
+        gap: 28px;
+    }
+}
+
+.whyus__text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+
+    @media (max-width: $breakpoint-4){
+        gap: 10px;
+        h2{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+        .whyus__br4{
+            display: block;
+        }
+    }
+}
+
+.whyus__cards{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+
+    @media (max-width: $breakpoint-3){
+        gap: 10px;
+    }
+    @media (max-width: $breakpoint-3){
+        gap: 20px;
+        flex-direction: column;
+    }
+    @media (max-width: $breakpoint-4){
+        gap: 20px;
+    }
+}
+
+.whyus__card{
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    border-top: 4px solid $primary;
+    box-shadow: 10px 26px 150px 0 rgba(43, 43, 64, 0.1);
+    padding: 36px 32px 40px 32px;
+    gap: 73px;
+    @media (max-width: $breakpoint-1){
+        padding: 24px 20px 28px 20px;
+    }
+    @media (max-width: $breakpoint-3){
+        padding: 8px 8px 12px 8px;
+        gap: 50px;
+    }
+    @media (max-width: $breakpoint-4){
+        padding: 28px 20px 32px 20px;
+        gap: 41px;
+    }
+}
+
+.whyus__card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: $breakpoint-4){
+        gap: 8px;
+        .whyus__br4-none{
+            display: none;
+        }
+        .whyus__br4{
+            display: block;
+        }
+    }
+}
+
+.whyus__card-link{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    h4{
+        font-size: 20px;
+    }
+
+    @media (max-width: $breakpoint-3){
+        gap: 6px;
+        h4{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    @media (max-width: $breakpoint-4){
+        gap: 12px;
+        img{
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.light{
+    h3{
+        font-weight: 900px;
+        color: $black;
+    }
+
+    h4{
+        color: $primary;
+    }
+    @media (max-width: $breakpoint-4){
+        max-height: 257px;
+        p{
+            font-size: 15px;
+            line-height: 23px;
+            font-weight: 400;
+        }
+    }
+}
+
+.dark{
+    background-color: $primary;
+    color: $white;
+    .whyus__card-link{
+        gap: 18px;
+    }
+    @media (max-width: $breakpoint-3){
+        img{
+            width: 13px;
+            height: 13px;
+        }
+        .whyus__card-link{
+             gap: 8px;
+        }
+    }
+    @media (max-width: $breakpoint-4){
+        max-height: 254px;
+        img{
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
+
+.whyus__br4{
+    display: none;
+}

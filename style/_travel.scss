@@ -1,0 +1,187 @@
+.travel{
+    padding-bottom: 50px;
+
+    @media (max-width: $breakpoint-2){
+        padding-bottom: 40px;
+    }
+    @media (max-width: $breakpoint-3){
+        padding-bottom: 80px;
+    }
+    @media (max-width: $breakpoint-3){
+        padding-bottom: 40px;
+    }
+}
+
+.travel__container{
+    position: relative;
+    text-align: center;
+    max-width: $breakpoint-1 + 1px;
+    max-height: $H_img-1;
+    margin: 0 auto;
+    @media (max-width: $breakpoint-2){
+        max-width: $breakpoint-2;
+        max-height: $H_img-2;
+    }
+    @media (max-width: $breakpoint-3){
+        max-width: $breakpoint-3;
+        max-height: $H_img-3;
+    }
+    @media (max-width: $breakpoint-4){
+        max-width: $breakpoint-5;
+        max-height: $H_img-4;
+    }
+}
+
+
+
+.travel__container-img{
+    @media (max-width: $breakpoint-1){
+        width: 100vw;
+    }
+    @media (max-width: $breakpoint-4){
+        width: $breakpoint-5;
+        height: $H_img-4;
+    }
+}
+
+.travel h1{
+    position: absolute;
+    top: 164px;
+    right: 119px;
+    @media (max-width: $breakpoint-1){
+        top: 144px;
+        right: 109px;
+    }
+    @media (max-width: $breakpoint-2){
+        top: 112px;
+        right: 79px;
+    }
+    @media (max-width: $breakpoint-3){
+        top: 100px;
+        left: 59px;
+    }
+    @media (max-width: $breakpoint-4){
+        width: $breakpoint-5;
+        top: 135px;
+        left: -20px;
+    }
+}
+
+.travel p{
+    color: $light-six;
+    font-weight: 500;
+    text-align: left;
+    @media (max-width: $breakpoint-4){
+        text-align: center;
+    }
+}
+
+
+.travel__uptext{
+    letter-spacing: 2.7px;
+    font-weight: 1000;
+    position: absolute;
+    top: 40px;
+    left: 121px;
+    @media (max-width: $breakpoint-1){
+        top: 30px;
+        left: 109px;
+    }
+    @media (max-width: $breakpoint-2){
+        top: 30px;
+        left: 89px;
+    }
+    @media (max-width: $breakpoint-3){
+        top: 20px;
+        left: 69px;
+    }
+    @media (max-width: $breakpoint-4){
+        top: 20.5px;
+        left: 0;
+        font-size: 28px;
+        line-height: auto;
+        right: 0;
+        margin: auto;
+    }
+}
+
+
+.travel__content{
+    position: absolute;
+    align-items: center;
+    max-width: $container-1;
+    display: flex;
+    gap: 31px;
+    background-color: $primary;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 40px 60px;
+
+    img{
+        vertical-align: middle;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    h4{
+        color: $light-six;
+        font-weight: 500;
+    }
+
+
+    @media (max-width: $breakpoint-1){
+        bottom: 9px;
+        justify-content: space-between;
+        max-width: $container-2;
+        padding: 20px 40px;
+        gap: 15px;
+    }
+
+    @media (max-width: $breakpoint-2){
+        bottom: 8px;
+        padding: 20px 30px;
+        gap: 10px;
+        max-width: $container-3;
+    }
+    @media (max-width: $breakpoint-3){
+        max-width: $breakpoint-3;
+        bottom: -75px;
+        padding: 10px 15px;
+    }
+    @media (max-width: $breakpoint-4){
+        bottom: -228px;
+        max-width: $breakpoint-5;
+        max-height: 231px;
+        padding: 24px 20px 28px 20px;
+        text-align: center;
+        flex-direction: column;
+        gap: 15px;
+        img{
+            display: none;
+        }
+        h4{
+            display: none;
+        }
+
+        .travel__br4{
+            display: block;
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+}
+
+.travel__content-border{
+    @media (max-width: $breakpoint-4){
+        width: $container-5;
+        padding: 16px 0;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+    }
+}
+
+.travel__br4{
+    display: none;
+}
