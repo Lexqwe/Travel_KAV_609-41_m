@@ -1,6 +1,6 @@
 .best__content-cards__moblie{
     display: none;
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         display: flex;
         flex-direction: column;
         gap: 24px;

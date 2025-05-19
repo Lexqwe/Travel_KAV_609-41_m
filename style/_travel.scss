@@ -1,69 +1,28 @@
 .travel{
-    padding-bottom: 50px;
-
-    @media (max-width: $breakpoint-2){
-        padding-bottom: 40px;
-    }
-    @media (max-width: $breakpoint-3){
-        padding-bottom: 80px;
-    }
-    @media (max-width: $breakpoint-3){
-        padding-bottom: 40px;
-    }
+    display: flex;
+    flex-direction: column;
 }
 
-.travel__container{
-    position: relative;
-    text-align: center;
-    max-width: $breakpoint-1 + 1px;
-    max-height: $H_img-1;
-    margin: 0 auto;
-    @media (max-width: $breakpoint-2){
-        max-width: $breakpoint-2;
-        max-height: $H_img-2;
+.travel__img-block{
+    background: url('/img/travel.jpg') no-repeat center bottom;
+    @media (max-width: $breakpoint-md){
+        background: url('/img/travel.jpg') no-repeat center bottom 10%;
     }
-    @media (max-width: $breakpoint-3){
-        max-width: $breakpoint-3;
-        max-height: $H_img-3;
-    }
-    @media (max-width: $breakpoint-4){
-        max-width: $breakpoint-5;
-        max-height: $H_img-4;
-    }
-}
-
-
-
-.travel__container-img{
-    @media (max-width: $breakpoint-1){
-        width: 100vw;
-    }
-    @media (max-width: $breakpoint-4){
-        width: $breakpoint-5;
-        height: $H_img-4;
+    @media (max-width: $breakpoint-sm){
+        background: url('/img/travel.jpg') no-repeat center bottom 20%;
     }
 }
 
 .travel h1{
-    position: absolute;
-    top: 164px;
-    right: 119px;
-    @media (max-width: $breakpoint-1){
-        top: 144px;
-        right: 109px;
+    padding-top: 82px;
+    @media (max-width: $breakpoint-md){
+        padding-top: 162px;
+        padding-bottom: 520px;
     }
-    @media (max-width: $breakpoint-2){
-        top: 112px;
-        right: 79px;
-    }
-    @media (max-width: $breakpoint-3){
-        top: 100px;
-        left: 59px;
-    }
-    @media (max-width: $breakpoint-4){
-        width: $breakpoint-5;
-        top: 135px;
-        left: -20px;
+    @media (max-width: $breakpoint-sm){
+        margin: 0 7%;
+        padding-top: 122px;
+        padding-bottom: 375px;
     }
 }
 
@@ -71,52 +30,29 @@
     color: $light-six;
     font-weight: 500;
     text-align: left;
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-lg){
         text-align: center;
     }
 }
 
-
 .travel__uptext{
+    padding-top: 40px;
+    text-align: left;
     letter-spacing: 2.7px;
     font-weight: 1000;
-    position: absolute;
-    top: 40px;
-    left: 121px;
-    @media (max-width: $breakpoint-1){
-        top: 30px;
-        left: 109px;
-    }
-    @media (max-width: $breakpoint-2){
-        top: 30px;
-        left: 89px;
-    }
-    @media (max-width: $breakpoint-3){
-        top: 20px;
-        left: 69px;
-    }
-    @media (max-width: $breakpoint-4){
-        top: 20.5px;
-        left: 0;
-        font-size: 28px;
-        line-height: auto;
-        right: 0;
-        margin: auto;
+    @media (max-width: $breakpoint-md){
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
 
 .travel__content{
-    position: absolute;
     align-items: center;
-    max-width: $container-1;
+    margin-top: 410px;
     display: flex;
     gap: 31px;
     background-color: $primary;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
     padding: 40px 60px;
 
     img{
@@ -131,41 +67,40 @@
     }
 
 
-    @media (max-width: $breakpoint-1){
-        bottom: 9px;
+    @media (max-width: $breakpoint-xl){
         justify-content: space-between;
-        max-width: $container-2;
         padding: 20px 40px;
-        gap: 15px;
     }
 
-    @media (max-width: $breakpoint-2){
-        bottom: 8px;
+    @media (max-width: $breakpoint-lg){
         padding: 20px 30px;
         gap: 10px;
-        max-width: $container-3;
     }
-    @media (max-width: $breakpoint-3){
-        max-width: $breakpoint-3;
-        bottom: -75px;
-        padding: 10px 15px;
+    @media (max-width: $breakpoint-md){
+        display: none;
     }
-    @media (max-width: $breakpoint-4){
-        bottom: -228px;
-        max-width: $breakpoint-5;
-        max-height: 231px;
+}
+
+
+.travel__content-md{
+    display: none;
+    @media (max-width: $breakpoint-md){
+        display: flex;
+        width: 100vw;
+        background-color: $primary;
+        margin-top: 0;
+        max-width: 100%;
         padding: 24px 20px 28px 20px;
         text-align: center;
         flex-direction: column;
         gap: 15px;
-        img{
-            display: none;
-        }
+
         h4{
-            display: none;
+            color: $light-six;
+            font-weight: 500;
         }
 
-        .travel__br4{
+        .travel__br{
             display: block;
             font-size: 20px;
             line-height: 32px;
@@ -174,14 +109,14 @@
 }
 
 .travel__content-border{
-    @media (max-width: $breakpoint-4){
-        width: $container-5;
+    @media (max-width: $breakpoint-md){
+        width: 100%;
         padding: 16px 0;
         border-top: 1px solid $white;
         border-bottom: 1px solid $white;
     }
 }
 
-.travel__br4{
+.travel__br{
     display: none;
 }

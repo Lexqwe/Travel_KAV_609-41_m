@@ -1,11 +1,13 @@
 .best{
-    padding: 50px 0 100px 0;
-
-    @media (max-width: $breakpoint-2){
-        padding: 40px 0;
+    padding: 100px 0;
+    @media (max-width: $breakpoint-xl){
+        padding: 80px 0;
     }
-    @media (max-width: $breakpoint-4){
-        padding: 269px 0 50px 0;
+    @media (max-width: $breakpoint-lg){
+        padding: 60px 0;
+    }
+    @media (max-width: $breakpoint-md){
+        padding: 40px 0;
     }
 }
 
@@ -13,11 +15,12 @@
     display: flex;
     flex-direction: column;
     gap: 54px;
-    @media (max-width: $breakpoint-3){
+    @media (max-width: $breakpoint-md){
         gap: 20px;
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         gap: 26px;
+        text-align: center;
     }
 }
 
@@ -25,9 +28,17 @@
 .best__content-search{
     display: flex;
     justify-content: space-between;
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         flex-direction: column;
         gap: 12px;
+    }
+
+    @media (max-width: $breakpoint-md){
+        align-items: center;
+        h2{
+            font-size: 50px;
+            line-height: 50px;
+        }
     }
 }
 
@@ -39,7 +50,7 @@
     p{
         margin-right: 10px;
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         gap: 18px;
         padding: 0 0 0 0;
         p{
@@ -67,7 +78,7 @@
     font-size: 18px;
     line-height: 32px;
     color: $light-seven;
-    @media (max-width: $breakpoint-2){
+    @media (max-width: $breakpoint-lg){
         font-size: 16px;
         line-height: 24px;
     }
@@ -84,7 +95,7 @@
     position: absolute;
     left: 14px;
     top: 15px;
-    @media (max-width: $breakpoint-2){
+    @media (max-width: $breakpoint-lg){
         left: 14px;
         top: 14px;
     }
@@ -99,7 +110,7 @@
     img{
         padding: 12px 12px;
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         width: 44px;
         height: 44px;
         img{
@@ -111,67 +122,48 @@
 
 .best__content-cards{
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-    @media (max-width: $breakpoint-2){
-        gap: 20px;
+    flex-wrap: wrap;
+    gap: 36px;
+    
+    @media (max-width: $breakpoint-lg){
+        justify-content: space-between;
+        padding: 0 50px;
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         display: none;
     }
 }
 
 
-.best__content-cardrow{
-    display: flex; 
-    gap: 44px;
-
-    @media (max-width: $breakpoint-1){
-        justify-content: space-between;
-    }
-    @media (max-width: $breakpoint-2){
-        gap: 24px;
-    }
-    @media (max-width: $breakpoint-2){
-        overflow: hidden;
-    }
-}
-
 .best__content-card{
     display: flex;
     flex-direction: column;
-    padding: 15px 15px 35px 15px;
+    padding: 16px 16px 36px 16px;
     gap: 28px;
     border: 1px solid $light-forth;
     background-color: $white;
     box-shadow: 105.45px 50.41px 78.04px 0 rgba(55, 54, 100, 0.05),
                 -55.45px 50.41px 98px 0 rgba(55, 54, 100, 0.05);
-
-    @media (max-width: $breakpoint-2){
-        gap: 20px;
-        padding: 10px 5px 30px 10px;
+    @media (max-width: $breakpoint-md){
+        padding: 8px 8px 18px 8px;
     }
-
-    @media (max-width: $breakpoint-4){
-        height: 378px;
-        padding: 12px 12px 24px 12px;
-        gap: 20px;
+    @media (max-width: $breakpoint-sm){
+        align-items: center;
     }
 }
 
 .best__content-card__img{
-    @media (max-width: $breakpoint-1){
+    @media (max-width: $breakpoint-xl){
         width: 300px;
+        height: auto;
     }
-    @media (max-width: $breakpoint-2){
-        width: 240px;
+    @media (max-width: $breakpoint-md){
+        width: 220px;
+        height: auto;
     }
-    @media (max-width: $breakpoint-3){
-        width: 286.5px;
-    }
-    @media (max-width: $breakpoint-4){
-        width: 311px;
-        height: 262px;
+    @media (max-width: $breakpoint-sm){
+        width: 90%;
+        height: auto;
     }
 }
 

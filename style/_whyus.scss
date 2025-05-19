@@ -1,8 +1,13 @@
 .whyus{
     padding: 100px 0;
-
-    @media (max-width: $breakpoint-2){
-        padding: 50px 0;
+    @media (max-width: $breakpoint-xl){
+        padding: 80px 0;
+    }
+    @media (max-width: $breakpoint-lg){
+        padding: 60px 0;
+    }
+    @media (max-width: $breakpoint-md){
+        padding: 40px 0;
     }
 }
 
@@ -10,10 +15,10 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
-    @media (max-width: $breakpoint-3){
+    @media (max-width: $breakpoint-md){
         gap: 30px;
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         gap: 28px;
     }
 }
@@ -24,15 +29,14 @@
     gap: 24px;
     text-align: center;
 
-    @media (max-width: $breakpoint-4){
-        gap: 10px;
-        h2{
+    @media (max-width: $breakpoint-md){
+        gap: 20px;
+        margin: 0 auto;
+        width: 85%;
+        .whyus__br-none{
             display: none;
         }
-        p{
-            display: none;
-        }
-        .whyus__br4{
+        .whyus__br{
             display: block;
         }
     }
@@ -42,36 +46,32 @@
     display: flex;
     justify-content: center;
     gap: 28px;
-
-    @media (max-width: $breakpoint-3){
-        gap: 10px;
-    }
-    @media (max-width: $breakpoint-3){
-        gap: 20px;
+    @media (max-width: $breakpoint-md){
         flex-direction: column;
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         gap: 20px;
     }
 }
 
 .whyus__card{
     display: flex;
-    width: 100%;
-
     flex-direction: column;
+    width: 100%;
     border-top: 4px solid $primary;
     box-shadow: 10px 26px 150px 0 rgba(43, 43, 64, 0.1);
     padding: 36px 32px 40px 32px;
     gap: 73px;
-    @media (max-width: $breakpoint-1){
+    @media (max-width: $breakpoint-xl){
         padding: 24px 20px 28px 20px;
     }
-    @media (max-width: $breakpoint-3){
+    @media (max-width: $breakpoint-md){
         padding: 8px 8px 12px 8px;
         gap: 50px;
+        width: 55%;
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
+        width: 100%;
         padding: 28px 20px 32px 20px;
         gap: 41px;
     }
@@ -81,12 +81,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         gap: 8px;
-        .whyus__br4-none{
+        .whyus__br-none{
             display: none;
         }
-        .whyus__br4{
+        .whyus__br{
             display: block;
         }
     }
@@ -101,7 +101,7 @@
         font-size: 20px;
     }
 
-    @media (max-width: $breakpoint-3){
+    @media (max-width: $breakpoint-md){
         gap: 6px;
         h4{
             font-weight: 500;
@@ -114,7 +114,7 @@
             height: 20px;
         }
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){
         gap: 12px;
         img{
             width: 16px;
@@ -132,7 +132,11 @@
     h4{
         color: $primary;
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-md){
+        margin-left: 15%;
+    }
+    @media (max-width: $breakpoint-sm){
+        margin: 0;
         max-height: 257px;
         p{
             font-size: 15px;
@@ -148,7 +152,9 @@
     .whyus__card-link{
         gap: 18px;
     }
-    @media (max-width: $breakpoint-3){
+    @media (max-width: $breakpoint-md){
+        margin-left: 35%;
+        text-align: right;
         img{
             width: 13px;
             height: 13px;
@@ -157,7 +163,9 @@
              gap: 8px;
         }
     }
-    @media (max-width: $breakpoint-4){
+    @media (max-width: $breakpoint-sm){  
+        margin: 0;
+        text-align: left;
         max-height: 254px;
         img{
             width: 12px;
@@ -166,6 +174,6 @@
     }
 }
 
-.whyus__br4{
+.whyus__br{
     display: none;
 }

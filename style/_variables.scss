@@ -15,20 +15,13 @@ $light-seven:#A6A6A6;
 $gray: #8C8C8C;
 
 
-$container-5: 335px;
-$container-4: 630px;
-$container-3: 850px;
-$container-2: 1090px;
-$container-1: 1200px;
+$container-sm: 630px;
+$container-md: 850px;
+$container-lg: 1090px;
+$container-xl: 1200px;
 
-$breakpoint-0: 0;
-$breakpoint-5: 374px;
-$breakpoint-4: 680px;
-$breakpoint-3: 870px;
-$breakpoint-2: 1182px;
-$breakpoint-1: 1439px;
-
-$H_img-4: 473px;
-$H_img-3: 780px;
-$H_img-2: 920px;
-$H_img-1: 1070px;
+$breakpoint-xs: 0;
+$breakpoint-sm: 680px;
+$breakpoint-md: 870px;
+$breakpoint-lg: 1182px;
+$breakpoint-xl: 1439px;
