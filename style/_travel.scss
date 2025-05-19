@@ -6,10 +6,10 @@
 .travel__img-block{
     background: url('/img/travel.jpg') no-repeat center bottom;
     @media (max-width: $breakpoint-md){
-        background: url('/img/travel.jpg') no-repeat center bottom 10%;
+        background: url('./img/travel.jpg') no-repeat center bottom 10%;
     }
     @media (max-width: $breakpoint-sm){
-        background: url('/img/travel.jpg') no-repeat center bottom 20%;
+        background: url('./img/travel.jpg') no-repeat center bottom 20%;
     }
 }
 
