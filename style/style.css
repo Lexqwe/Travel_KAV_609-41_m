@@ -168,16 +168,16 @@ h5 {
 }
 
 .travel__img-block {
-  background: url("/img/travel.jpg") no-repeat center bottom;
+  background: url("./img/travel.jpg") no-repeat center bottom;
 }
 @media (max-width: 870px) {
   .travel__img-block {
-    background: url("/img/travel.jpg") no-repeat center bottom 10%;
+    background: url("./img/travel.jpg") no-repeat center bottom 10%;
   }
 }
 @media (max-width: 680px) {
   .travel__img-block {
-    background: url("/img/travel.jpg") no-repeat center bottom 20%;
+    background: url("./img/travel.jpg") no-repeat center bottom 20%;
   }
 }
 
