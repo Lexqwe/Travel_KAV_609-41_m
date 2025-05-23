@@ -25,7 +25,7 @@
 }
 
 
-.best__content-search{
+.best__search-group{
     display: flex;
     justify-content: space-between;
     @media (max-width: $breakpoint-sm){
@@ -42,7 +42,7 @@
     }
 }
 
-.best__content-searchblock{
+.best__searchblock{
     display: flex;
     padding: 32px 0 9px 0;
     flex-direction: column;
@@ -59,7 +59,7 @@
     }
 }
 
-.best__content-searchbar{
+.best__form{
     position: relative;
     display: flex;
     width: 100%;
@@ -84,14 +84,14 @@
     }
 }
 
-.best__content-searchinput{
+.best__search-input{
     vertical-align: middle;
     line-height: 32px;
     padding-left: 32px;
     background-color: $light-third;
 }
 
-.best__content-input__placeholder-img{
+.best__input-img{
     position: absolute;
     left: 14px;
     top: 15px;
@@ -101,7 +101,7 @@
     }
 }
 
-.best__content-searchimgblock{
+.best__img-block{
     width: 48px;
     height: 48px;
     background-color: $light-icon;
@@ -120,7 +120,7 @@
     }
 }
 
-.best__content-cards{
+.best__cards{
     display: flex;
     flex-wrap: wrap;
     gap: 36px;
@@ -135,7 +135,7 @@
 }
 
 
-.best__content-card{
+.best__card{
     display: flex;
     flex-direction: column;
     padding: 16px 16px 36px 16px;
@@ -152,7 +152,7 @@
     }
 }
 
-.best__content-card__img{
+.best__card-img{
     @media (max-width: $breakpoint-xl){
         width: 300px;
         height: auto;
@@ -174,7 +174,7 @@
     padding: 0 4px;
 }
 
-.best__card-info__nameblock{
+.best__info-nameblock{
     display: flex;
     gap: 8px;
 }

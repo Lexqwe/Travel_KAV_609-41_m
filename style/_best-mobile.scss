@@ -1,4 +1,4 @@
-.best__content-cards__moblie{
+.best__cards_moblie{
     display: none;
     @media (max-width: $breakpoint-sm){
         display: flex;
@@ -7,13 +7,13 @@
     }
 }
 
-.best__content-cards__buttons{
+.best__buttons{
     display: flex;
     justify-content: center;
     gap: 4px;
 }
 
-.best__content-cards__button{
+.best__button{
     width: 10px;
     height: 10px;
     background-color: $primary;
@@ -21,7 +21,7 @@
     border-radius: 32px;
 }
 
-.active{
+.best__button_active{
     width: 28px;
     height: 10px;
     border-radius: 16px;

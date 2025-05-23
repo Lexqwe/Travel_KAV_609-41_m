@@ -4,7 +4,7 @@
 }
 
 .travel__img-block{
-    background: url('/img/travel.jpg') no-repeat center bottom;
+    background: url('../img/travel.jpg') no-repeat center bottom;
     @media (max-width: $breakpoint-md){
         background: url('../img/travel.jpg') no-repeat center bottom 10%;
     }
@@ -82,7 +82,7 @@
 }
 
 
-.travel__content-md{
+.travel__content_md{
     display: none;
     @media (max-width: $breakpoint-md){
         display: flex;
@@ -108,7 +108,7 @@
     }
 }
 
-.travel__content-border{
+.travel__border{
     @media (max-width: $breakpoint-md){
         width: 100%;
         padding: 16px 0;

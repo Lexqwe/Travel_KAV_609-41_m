@@ -78,7 +78,7 @@
     }
 }
 
-.memorable__content-links {
+.memorable__content-buttons {
     display: flex;
     gap: 32px;
     @media (max-width: $breakpoint-md){
@@ -89,15 +89,13 @@
     }
 }
 
-.memorable__content-links__discover {
+.memorable__content-button{
     display: flex;
     align-items: center;
-
-    p {
-        line-height: 29px;
-        color: $dark-second;
-        border-bottom: 1px solid $dark-second;
-    }
+    background: none;
+    font-size: 18px;
+    border-bottom: 1px solid $dark-second;
+    color: $dark-second;
 }
 
 
